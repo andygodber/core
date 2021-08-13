@@ -143,7 +143,7 @@ async def async_request_stream(hass: HomeAssistant, entity_id: str, fmt: str) ->
 
 async def _async_get_image(
     camera: Camera,
-    timeout: int = 10,
+    timeout: int = 5,
     width: int | None = None,
     height: int | None = None,
 ) -> Image:
@@ -194,7 +194,7 @@ async def _async_get_image(
 async def async_get_image(
     hass: HomeAssistant,
     entity_id: str,
-    timeout: int = 10,
+    timeout: int = 5,
     width: int | None = None,
     height: int | None = None,
 ) -> Image:
